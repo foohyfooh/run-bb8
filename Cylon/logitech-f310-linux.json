@@ -1,0 +1,31 @@
+{
+  "description": "Logitech Gamepad F310",
+
+  "vendorID": 1133,
+  "productID": 49693,
+
+  "axis": [
+    { "name": "left_x", "id": 0 },
+    { "name": "left_y", "id": 1 },
+    { "name": "left_z", "id": 2 },
+    { "name": "right_x", "id": 3 },
+    { "name": "right_y", "id": 4 },
+    { "name": "right_z", "id": 5 },
+    { "name": "dpad_x", "id": 6 },
+    { "name": "dpad_y", "id": 7}
+  ],
+
+  "buttons": [
+    { "name": "a", "id": 0 },
+    { "name": "b", "id": 1 },
+    { "name": "y", "id": 2 },
+    { "name": "x", "id": 3 },
+    { "name": "lb",  "id": 4 },
+    { "name": "rb",  "id": 5 },
+    { "name": "select",  "id": 6 },
+    { "name": "start",  "id": 7 },
+    { "name": "home", "id": 8 },
+    { "name": "ls",  "id": 9 },
+    { "name": "rs",  "id": 10 }
+  ]
+}
