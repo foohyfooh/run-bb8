@@ -50,7 +50,7 @@ cylon.robot({ //Connect to the robot
           this[colour] += 5
           if(this[colour] >= 255) {
             this[colour] = 255;
-            clearInterval(colourState.colourAddInterval)
+            clearInterval(this.colourAddInterval)
           };
           bb8.color(this.toRGB());
           //console.log(this.toRGB());
@@ -71,7 +71,7 @@ cylon.robot({ //Connect to the robot
     bb8.color(0x000000); //Set the default colour to black
 
     bb8.detectCollisions((data) => {
-      //PLay bb8 hurt sound
+      //Play bb8 hurt sound
     });
 
     //Handle movement with the joysticks
@@ -145,7 +145,7 @@ cylon.robot({ //Connect to the robot
         console.log("Random Colour");
       }else if(button === BUTTON_START){
         colourState.reset();
-        bb8.color(colourState.toRGB());
+        bb8.color(0x000000);
         console.log("Resetting Colour");
       }else if(button === BUTTON_LEFT_BUMPER){
         bb8.spin("left", 100);
